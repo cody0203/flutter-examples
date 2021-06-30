@@ -1,6 +1,7 @@
 # Flutter examples
 
 Learn Flutter by easy-to-difficult examples.
+
 Office document: https://flutter.dev/docs.
 
 # Reference
@@ -24,3 +25,9 @@ This project is based on [react-native-expo-examples](https://github.com/robinhu
 Learn how to use: **ThemeData**, **Scaffold**, **Center**, **Text**, **SafeArea**, **Align**, **Column**, **RichText**, **TextSpan**, **WidgetSpan**, **SizedBox**, **Container**, and some style classes.
 
 <img src="./assets/hello_world/hello_world_1.png" width="250" alt="Hello World 1" /> <img src="./assets/hello_world/hello_world_2.png" width="250" alt="Hello World 2" />
+
+### 2. Login Screen
+
+Learn how to use: **GestureDetector**, **FocusScope**, **AnnotatedRegion**, **SafeArea**, **TextField**, **Row**, **Enum**, **MediaQuery**, **Image**, **Animation**, **ElevatedButton**, **TextEditingController**, **FocusNode**, **StatefulWidget** and some widget lifecycle (**initState**, **dispose**) with event handler.
+
+<img src="./assets/login_screen/momo_login.png" width="250" alt="Hello World 1" /> <img src="./assets/login_screen/facebook_login.gif" width="250" alt="Hello World 2" />

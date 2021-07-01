@@ -2,7 +2,7 @@
 
 Learn Flutter by easy-to-difficult examples.
 
-Office document: https://flutter.dev/docs.
+Official document: https://flutter.dev/docs.
 
 # Reference
 
@@ -28,6 +28,13 @@ Learn how to use: **ThemeData**, **Scaffold**, **Center**, **Text**, **SafeArea*
 
 ### 2. Login Screen
 
-Learn how to use: **GestureDetector**, **FocusScope**, **AnnotatedRegion**, **SafeArea**, **TextField**, **Row**, **Enum**, **MediaQuery**, **Image**, **Animation**, **ElevatedButton**, **TextEditingController**, **FocusNode**, **StatefulWidget** and some widget lifecycle (**initState**, **dispose**) with event handler.
+Learn how to use: **GestureDetector**, **FocusScope**, **AnnotatedRegion**, **TextField**, **Row**, **Enum**, **MediaQuery**, **Image**, **Animation**, **ElevatedButton**, **TextEditingController**, **FocusNode**, **StatefulWidget** and some widget lifecycle (**initState**, **dispose**) with event handler.
 
-<img src="./assets/login_screen/momo_login.png" width="250" alt="Hello World 1" /> <img src="./assets/login_screen/facebook_login.gif" width="250" alt="Hello World 2" />
+<img src="./assets/login_screen/momo_login.png" width="250" alt="Momo Login" /> <img src="./assets/login_screen/facebook_login.gif" width="250" alt="Facebook Login" />
+
+### 3. The Light
+Learn how to use: **Platform**, **Switch**, **Cupertino Widget and Material Widget**, **Transform** and more about **StatefulWidget**.
+
+<img src="./assets/the_light/bulb.gif" width="250" alt="Bulb" /> <img src="./assets/the_light/traffic_light.gif" width="250" alt="Traffic Light" />
+
+## More examples coming soon!

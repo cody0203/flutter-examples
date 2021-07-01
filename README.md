@@ -37,4 +37,9 @@ Learn how to use: **Platform**, **Switch**, **Cupertino Widget and Material Widg
 
 <img src="./assets/the_light/bulb.gif" width="250" alt="Bulb" /> <img src="./assets/the_light/traffic_light.gif" width="250" alt="Traffic Light" />
 
+### 3. Register Form
+Learn how to use: **AppBar**, **Form**, **GlobalKey**, **TextFormField**, **showDialog method and AlertDialog Widget**, **Navigator**, **AnimatedPadding** and **JsonCodec** in **dart:convert**.
+
+<img src="./assets/register_form/register_form.png" width="250" alt="Register Form" />
+
 ## More examples coming soon!

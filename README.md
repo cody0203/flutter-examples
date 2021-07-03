@@ -47,4 +47,9 @@ Learn how to use: **More about AppBar**, **BottomNavigationBar**, **BottomNaviga
 
 <img src="./assets/instagram_feed/instagram_feed.png" width="250" alt="Register Form" />
 
+### 4. Rock Paper Scissors
+Learn how to use: **More about Animation**.
+
+<img src="./assets/rock_paper_scissors/rock_paper_scissors.gif" width="250" alt="Register Form" />
+
 ## More examples coming soon!

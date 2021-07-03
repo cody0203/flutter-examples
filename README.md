@@ -42,4 +42,9 @@ Learn how to use: **AppBar**, **Form**, **GlobalKey**, **TextFormField**, **show
 
 <img src="./assets/register_form/register_form.png" width="250" alt="Register Form" />
 
+### 4. Instagram Feed
+Learn how to use: **More about AppBar**, **BottomNavigationBar**, **BottomNavigationBarItem**, **ListView and ListView builder**, **LinearGradient**, **CircleAvatar**, **ClipOval**, **Stack**, **Positioned**, **LayoutBuilder**, **TextPainter**, some external libraries and how to declare data model.
+
+<img src="./assets/instagram_feed/instagram_feed.png" width="250" alt="Register Form" />
+
 ## More examples coming soon!

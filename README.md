@@ -52,4 +52,9 @@ Learn how to use: **More about Animation**.
 
 <img src="./assets/rock_paper_scissors/rock_paper_scissors.gif" width="250" alt="Register Form" />
 
+### 5. Stopwatch
+Learn how to use: **Provider pattern for state management**, **ChangeNotifier, ChangeNotifierProvider and notifyListeners** , **FontFeature**, **Expanded**, **FittedBox**, **ListTile**, **CupertinoButton**, **Timer**.
+
+<img src="./assets/stopwatch/stopwatch.gif" width="250" alt="Register Form" />
+
 ## More examples coming soon!

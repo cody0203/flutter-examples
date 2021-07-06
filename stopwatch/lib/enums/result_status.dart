@@ -1,0 +1,4 @@
+enum ResultStatus {
+  Largest,
+  Smallest,
+}

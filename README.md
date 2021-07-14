@@ -57,4 +57,10 @@ Learn how to use: **Provider pattern for state management**, **ChangeNotifier, C
 
 <img src="./assets/stopwatch/stopwatch.gif" width="250" alt="Register Form" />
 
+
+### 6. Worldwide News
+Learn how to use: **Clean architecture and bloc pattern in Flutter**, **FadeInImage**, **Infinite scroll with ListView** and some external packages like retrofit, flutter_bloc, get_it, equatable, lint, url_launcher, ... .
+
+<img src="./assets/news/news.png" width="250" alt="Register Form" />
+
 ## More examples coming soon!

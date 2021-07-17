@@ -63,4 +63,13 @@ Learn how to use: **Clean architecture and bloc pattern in Flutter**, **FadeInIm
 
 <img src="./assets/news/news.png" width="250" alt="Register Form" />
 
+
+### 7. VNSE demo
+Learn how to use: **Carousel package**, **Dotted packge**, **Launcher icon and splash screen**, **More practice with Stack and Positioned**, **Multiple scroll direction with SingleChildScrollView**.
+
+Special thanks to [linhkhanh.osbkl](https://www.facebook.com/linhkhanh.osbkl) for this beautiful UI/UX design!
+
+[![Demo video](./assets/vnse/vnse.png)](https://youtu.be/lpnk0wFAmQM)
+
+
 ## More examples coming soon!

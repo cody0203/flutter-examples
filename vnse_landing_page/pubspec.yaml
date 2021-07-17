@@ -1,0 +1,75 @@
+name: vnse_landing_page
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  dotted_border: ^2.0.0
+  carousel_slider: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo_black.png
+    - assets/images/vietnam.png
+    - assets/images/worldwide.png
+    - assets/images/triangle.png
+    - assets/images/circle.png
+    - assets/images/square.png
+    - assets/images/flag.png
+    - assets/images/europe_map.png
+    - assets/images/engage_feature_utube.png
+    - assets/images/white_triangle.png
+    - assets/images/multiple_dot.png
+    - assets/images/talk_space_10.png
+    - assets/images/blog_feature.png
+    - assets/images/hack4grow2.png
+    - assets/images/hack4grow.png
+    - assets/images/podcast1.png
+    - assets/images/podcast2.png
+    - assets/images/spotify.png
+    - assets/images/music.png
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          weight: 800
+    - family: WorkSans
+      fonts:
+        - asset: assets/fonts/WorkSans-Medium.ttf
+          weight: 500

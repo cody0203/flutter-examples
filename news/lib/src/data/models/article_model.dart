@@ -26,14 +26,14 @@ class ArticleModel extends Article {
 
   factory ArticleModel.fromJson(Map<String, dynamic> data) {
     return ArticleModel(
-      source: SourceModel.fromJson(data['source']),
-      author: data['author'],
-      title: data['title'],
-      description: data['description'],
-      url: data['url'],
-      urlToImage: data['urlToImage'],
-      publishedAt: data['publishedAt'],
-      content: data['content'],
+      source: SourceModel.fromJson(data['source'] as Map<String, dynamic>),
+      author: data['author'].toString(),
+      title: data['title'].toString(),
+      description: data['description'].toString(),
+      url: data['url'].toString(),
+      urlToImage: data['urlToImage'].toString(),
+      publishedAt: data['publishedAt'].toString(),
+      content: data['content'].toString(),
     );
   }
 }

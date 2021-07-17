@@ -13,8 +13,8 @@ class TopHeadlinesModel {
 
   factory TopHeadlinesModel.fromJson(Map<String, dynamic> data) {
     return TopHeadlinesModel(
-      status: data['status'],
-      totalResults: data['totalResults'],
+      status: data['status'] as String,
+      totalResults: data['totalResults'] as int,
       articles: List<dynamic>.from(
         data['articles'] as List<dynamic>,
       )

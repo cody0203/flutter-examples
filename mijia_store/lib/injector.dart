@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:mijia_store/src/domain/usecase/update_product_usecase.dart';
 
 import 'src/data/datasource/local/categories.dart';
 import 'src/data/datasource/local/products_service.dart';
@@ -28,10 +29,13 @@ Future<void> initializeDependencies() async {
   injector.registerSingleton<GetCategoryProductsUseCase>(
       GetCategoryProductsUseCase(injector()));
   injector.registerSingleton<GetProductUsecase>(GetProductUsecase(injector()));
+  injector.registerSingleton<UpdateProductUsecase>(
+      UpdateProductUsecase(injector()));
 
   // cubit
   injector.registerFactory(() => RoutingCubit());
   injector.registerFactory(() => ProductsCubit(
+        injector(),
         injector(),
         injector(),
       ));

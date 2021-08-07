@@ -6,8 +6,6 @@ abstract class ProductsState {
 
 class ProductsInit extends ProductsState {
   const ProductsInit();
-  @override
-  List<Object> get props => [];
 }
 
 class TopProductsCategoryDone extends ProductsState {

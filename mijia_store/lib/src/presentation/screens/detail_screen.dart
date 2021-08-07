@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mijia_store/injector.dart';
+import 'package:mijia_store/src/domain/entities/product.dart';
+import 'package:mijia_store/src/presentation/cubit/products/products_cubit.dart';
+import 'package:mijia_store/src/presentation/widgets/detail/favorite_icon.dart';
 
 import '../widgets/detail/product_detail_container.dart';
 import '../widgets/shared/main_app_bar.dart';
@@ -13,28 +18,34 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: MainAppBar(
-        actions: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(right: 28),
-            child: IconButton(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 4.5,
-                vertical: 6.5,
-              ),
-              onPressed: () {},
-              icon: const Icon(
-                Icons.favorite_outline,
-                size: 27,
-              ),
+    return BlocProvider<ProductsCubit>(
+      create: (BuildContext ctx) => injector()..getProduct(productId),
+      child: BlocBuilder<ProductsCubit, ProductsState>(
+          builder: (_, ProductsState state) {
+        if (state is ProductsInit) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        }
+
+        if (state is ProductDone) {
+          final Product product = state.product;
+          return Scaffold(
+            appBar: MainAppBar(
+              actions: <Widget>[
+                FavoriteIcon(
+                  product: product,
+                ),
+              ],
             ),
-          ),
-        ],
-      ),
-      body: DetailContainer(
-        productId: productId,
-      ),
+            body: DetailContainer(
+              product: product,
+            ),
+          );
+        }
+
+        return const SizedBox();
+      }),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mijia_store/src/domain/usecase/update_product_usecase.dart';
 
 import '../../../core/enums/category.dart';
 import '../../../domain/entities/category.dart';
@@ -12,10 +13,12 @@ class ProductsCubit extends Cubit<ProductsState> {
   ProductsCubit(
     this._categoryProductsUseCase,
     this._getProductUsecase,
+    this._updateProductUsecase,
   ) : super(const ProductsInit());
 
   final GetCategoryProductsUseCase _categoryProductsUseCase;
   final GetProductUsecase _getProductUsecase;
+  final UpdateProductUsecase _updateProductUsecase;
 
   Future<void> getTopProductsCategory(CategoryEnum category) async {
     try {
@@ -68,6 +71,25 @@ class ProductsCubit extends Cubit<ProductsState> {
   Future<void> getProduct(int productId) async {
     try {
       final Product product = _getProductUsecase(productId);
+      emit(ProductDone(product: product));
+    } on Exception {
+      print('getProduct error');
+    }
+  }
+
+  Future<void> updateProduct(Product newProduct) async {
+    try {
+      final Product updatedProduct = Product(
+        id: newProduct.id,
+        name: newProduct.name,
+        category: newProduct.category,
+        weight: newProduct.weight,
+        pricePerKg: newProduct.pricePerKg,
+        imageAssets: newProduct.imageAssets,
+        isFavorite: !newProduct.isFavorite,
+      );
+      final Product product = _updateProductUsecase(updatedProduct);
+
       emit(ProductDone(product: product));
     } on Exception {
       print('getProduct error');

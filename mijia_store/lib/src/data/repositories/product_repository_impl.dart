@@ -10,4 +10,9 @@ class ProductRepositoryImpl extends ProductRepository {
   Product getProduct(int id) {
     return _productsService.getProduct(id);
   }
+
+  @override
+  Product updateProduct(Product newProduct) {
+    return _productsService.updateProduct(newProduct);
+  }
 }

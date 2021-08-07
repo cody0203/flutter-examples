@@ -10,40 +10,22 @@ import 'product_detail.dart';
 class DetailContainer extends StatelessWidget {
   DetailContainer({
     Key? key,
-    required this.productId,
+    required this.product,
   }) : super(key: key);
-  final int productId;
+  final Product product;
   final Categories categories = Categories();
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<ProductsCubit>(
-      create: (BuildContext ctx) => injector()..getProduct(productId),
-      child: Container(
-        padding: EdgeInsets.only(
-          top: MediaQuery.of(context).size.width * 0.05,
-          right: 23,
-          bottom: MediaQuery.of(context).size.width * 0.04,
-          left: 23,
-        ),
-        width: double.infinity,
-        child: BlocBuilder<ProductsCubit, ProductsState>(
-          builder: (_, ProductsState state) {
-            if (state is ProductsInit) {
-              return const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-
-            if (state is ProductDone) {
-              final Product product = state.product;
-              return ProductDetail(product: product);
-            }
-
-            return const SizedBox();
-          },
-        ),
+    return Container(
+      padding: EdgeInsets.only(
+        top: MediaQuery.of(context).size.width * 0.05,
+        right: 23,
+        bottom: MediaQuery.of(context).size.width * 0.04,
+        left: 23,
       ),
+      width: double.infinity,
+      child: ProductDetail(product: product),
     );
   }
 }

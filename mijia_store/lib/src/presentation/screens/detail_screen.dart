@@ -20,32 +20,43 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider<ProductsCubit>(
       create: (BuildContext ctx) => injector()..getProduct(productId),
-      child: BlocBuilder<ProductsCubit, ProductsState>(
-          builder: (_, ProductsState state) {
-        if (state is ProductsInit) {
-          return const Center(
-            child: CircularProgressIndicator(),
-          );
-        }
+      child: Scaffold(
+        appBar: const MainAppBar(
+          actions: <Widget>[
+            FavoriteIcon(),
+          ],
+        ),
+        body: DetailContainer(
+          productId: productId,
+        ),
+      ),
+      // child: BlocBuilder<ProductsCubit, ProductsState>(
+      //   builder: (_, ProductsState state) {
+      //     if (state is ProductsInit) {
+      //       return const Center(
+      //         child: CircularProgressIndicator(),
+      //       );
+      //     }
+      //     print(state);
+      //     if (state is ProductDone) {
+      //       final Product product = state.product;
+      //       return Scaffold(
+      //         appBar: MainAppBar(
+      //           actions: <Widget>[
+      //             FavoriteIcon(
+      //               product: product,
+      //             ),
+      //           ],
+      //         ),
+      //         body: DetailContainer(
+      //           product: product,
+      //         ),
+      //       );
+      //     }
 
-        if (state is ProductDone) {
-          final Product product = state.product;
-          return Scaffold(
-            appBar: MainAppBar(
-              actions: <Widget>[
-                FavoriteIcon(
-                  product: product,
-                ),
-              ],
-            ),
-            body: DetailContainer(
-              product: product,
-            ),
-          );
-        }
-
-        return const SizedBox();
-      }),
+      //     return const SizedBox();
+      //   },
+      // ),
     );
   }
 }

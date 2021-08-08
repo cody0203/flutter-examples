@@ -6,30 +6,47 @@ import 'package:mijia_store/src/presentation/cubit/products/products_cubit.dart'
 class FavoriteIcon extends StatelessWidget {
   const FavoriteIcon({
     Key? key,
-    required this.product,
   }) : super(key: key);
-  final Product product;
 
   @override
   Widget build(BuildContext context) {
-    print(product.isFavorite);
     return Padding(
       padding: const EdgeInsets.only(right: 28),
-      child: IconButton(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 4.5,
-          vertical: 6.5,
-        ),
-        onPressed: () {
-          BlocProvider.of<ProductsCubit>(context).updateProduct(
-            product,
+      child: BlocBuilder<ProductsCubit, ProductsState>(
+        builder: (_, ProductsState state) {
+          if (state is ProductDone) {
+            final Product product = state.product;
+            return IconButton(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 4.5,
+                vertical: 6.5,
+              ),
+              onPressed: () {
+                BlocProvider.of<ProductsCubit>(context).updateProduct(
+                  product,
+                );
+              },
+              icon: Icon(
+                product.isFavorite ? Icons.favorite : Icons.favorite_outline,
+                size: 27,
+                color: product.isFavorite ? Colors.red : Colors.black,
+              ),
+            );
+          }
+
+          return IconButton(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 4.5,
+              vertical: 6.5,
+            ),
+            onPressed: () {},
+            icon: const Icon(
+              Icons.favorite_outline,
+              size: 27,
+              color: Colors.black,
+            ),
           );
         },
-        icon: Icon(
-          product.isFavorite ? Icons.favorite : Icons.favorite_outline,
-          size: 27,
-          color: product.isFavorite ? Colors.red : Colors.black,
-        ),
       ),
     );
   }

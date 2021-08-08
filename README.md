@@ -79,7 +79,7 @@ Special thanks to [Luky Erdianto](https://www.figma.com/@luky) for this beautifu
 <img src="./assets/online_course/online_course_1.png" width="250" alt="Online Course homepage" /> <img src="./assets/online_course/online_course_2.png" width="250" alt="Online Course profile" />
 
 ### 9. Mijia Store
-Learn how to use: **More about Clean Architecture and Bloc Pattern (Cubit)**, **More about Navigator (2.0) with Bloc and page transition**, ***More about Animation**, **How to customize Bottom Navigation Bar**.
+Learn how to use: **More about Clean Architecture and Bloc Pattern (Cubit)**, **More about Navigator (2.0) with Bloc and page transition**, **More about Animation**, **How to customize Bottom Navigation Bar**.
 
 Special thanks to [Ivan Fadila](https://www.figma.com/@ffadilaputra) for this beautiful design. Check out his work [here](https://www.figma.com/community/file/991283374937759863/Grocery---Mlija-App).
 

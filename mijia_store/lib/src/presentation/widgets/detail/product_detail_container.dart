@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../injector.dart';
 import '../../../data/datasource/local/categories.dart';
 import '../../../domain/entities/product.dart';
 import '../../cubit/products/products_cubit.dart';
@@ -10,9 +9,9 @@ import 'product_detail.dart';
 class DetailContainer extends StatelessWidget {
   DetailContainer({
     Key? key,
-    required this.product,
+    required this.productId,
   }) : super(key: key);
-  final Product product;
+  final int productId;
   final Categories categories = Categories();
 
   @override
@@ -25,7 +24,28 @@ class DetailContainer extends StatelessWidget {
         left: 23,
       ),
       width: double.infinity,
-      child: ProductDetail(product: product),
+      child: BlocBuilder<ProductsCubit, ProductsState>(
+        buildWhen: (ProductsState prevState, ProductsState state) {
+          if (state is ProductDone && prevState is ProductDone) {
+            return prevState.product.id != state.product.id;
+          }
+          return false;
+        },
+        builder: (_, ProductsState state) {
+          if (state is ProductsInit) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          print('$state ProductDetail');
+          if (state is ProductDone) {
+            final Product product = state.product;
+            return ProductDetail(product: product);
+          }
+
+          return const SizedBox();
+        },
+      ),
     );
   }
 }

@@ -37,48 +37,48 @@ Learn how to use: **Platform**, **Switch**, **Cupertino Widget and Material Widg
 
 <img src="./assets/the_light/bulb.gif" width="250" alt="Bulb" /> <img src="./assets/the_light/traffic_light.gif" width="250" alt="Traffic Light" />
 
-### 3. Register Form
+### 4. Register Form
 Learn how to use: **AppBar**, **Form**, **GlobalKey**, **TextFormField**, **showDialog method and AlertDialog Widget**, **Navigator**, **AnimatedPadding** and **JsonCodec** in **dart:convert**.
 
 <img src="./assets/register_form/register_form.png" width="250" alt="Register Form" />
 
-### 4. Instagram Feed
+### 5. Instagram Feed
 Learn how to use: **More about AppBar**, **BottomNavigationBar**, **BottomNavigationBarItem**, **ListView and ListView builder**, **LinearGradient**, **CircleAvatar**, **ClipOval**, **Stack**, **Positioned**, **LayoutBuilder**, **TextPainter**, some external libraries and how to declare data model.
 
 <img src="./assets/instagram_feed/instagram_feed.png" width="250" alt="Instagram Feed" />
 
-### 4. Rock Paper Scissors
+### 6. Rock Paper Scissors
 Learn how to use: **More about Animation**.
 
 <img src="./assets/rock_paper_scissors/rock_paper_scissors.gif" width="250" alt="Rock Paper Scissors" />
 
-### 5. Stopwatch
+### 7. Stopwatch
 Learn how to use: **Provider pattern for state management**, **ChangeNotifier, ChangeNotifierProvider and notifyListeners** , **FontFeature**, **Expanded**, **FittedBox**, **ListTile**, **CupertinoButton**, **Timer**.
 
 <img src="./assets/stopwatch/stopwatch.gif" width="250" alt="Stopwatch" />
 
 
-### 6. Worldwide News
+### 8. Worldwide News
 Learn how to use: **Clean architecture and bloc pattern in Flutter**, **FadeInImage**, **Infinite scroll with ListView** and some external packages like retrofit, flutter_bloc, get_it, equatable, lint, url_launcher, ... .
 
 <img src="./assets/news/news.png" width="250" alt="Worldwide News" />
 
 
-### 7. VNSE demo
+### 9. VNSE demo
 Learn how to use: **Carousel package**, **Dotted packge**, **Launcher icon and splash screen**, **More practice with Stack and Positioned**, **Multiple scroll direction with SingleChildScrollView**.
 
 Special thanks to [linhkhanh.osbkl](https://www.facebook.com/linhkhanh.osbkl) for this beautiful UI/UX design!
 
 [![Demo video](./assets/vnse/vnse.png)](https://youtu.be/lpnk0wFAmQM)
 
-### 8. Online Course
+### 10. Online Course
 Learn how to use: **CupertinoTabBar, BottomNavigationBarItem and TabBarView**, **More about Navigator (1.0)**, ***didChangeDependencies app lifecycle**, **flutter_svg package**, **How to customize a Flutter built-in widget (CustomExpansionTile) and extends a Flutter built-in widget (MainButton)**, **ClipRRect**.
 
 Special thanks to [Luky Erdianto](https://www.figma.com/@luky) for this beautiful design. Check out his work [here](https://www.figma.com/community/file/995300680331143438).
 
 <img src="./assets/online_course/online_course_1.png" width="250" alt="Online Course homepage" /> <img src="./assets/online_course/online_course_2.png" width="250" alt="Online Course profile" />
 
-### 9. Mijia Store
+### 11. Mijia Store
 Learn how to use: **More about Clean Architecture and Bloc Pattern (Cubit)**, **More about Navigator (2.0) with Bloc and page transition**, **More about Animation**, **How to customize Bottom Navigation Bar**.
 
 Special thanks to [Ivan Fadila](https://www.figma.com/@ffadilaputra) for this beautiful design. Check out his work [here](https://www.figma.com/community/file/991283374937759863/Grocery---Mlija-App).

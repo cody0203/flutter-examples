@@ -87,4 +87,13 @@ Special thanks to [Ivan Fadila](https://www.figma.com/@ffadilaputra) for this be
 
 <img src="./assets/mijia_store/mijia_store_3.png" width="250" alt="Online Course homepage" /> <img src="./assets/mijia_store/mijia_store_4.png" width="250" alt="Online Course profile" />
 
+### 11. Pokédex (WIP)
+Learn how to use: **More about Clean Architecture with Bloc Pattern**, **Unit Test for Domain, Data and Bloc**.
+
+Special thanks to [DanielMots](https://dribbble.com/DanielMots) for this UI. Check out his work [here](https://dribbble.com/shots/4862612-Pokedex-iOS-app).
+
+More feature coming soon!
+
+<img src="./assets/pokedex/pokedex_1.png" width="250" alt="Online Course homepage" />
+
 ## More examples coming soon!

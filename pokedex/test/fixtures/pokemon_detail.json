@@ -1,0 +1,80 @@
+{
+  "id": 1,
+  "avatar": "https://gamepress.gg/pokemongo/sites/pokemongo/files/2016-08/1_0.png",
+  "name": "Bulbasaur",
+  "sta": "128",
+  "atk": "118",
+  "def": "111",
+  "cp": "1115",
+  "catch_rate": "20.00 %",
+  "field_flee_rate": "10.00 %",
+  "field_pokemon_generation": "Generation 1",
+  "abilities": [
+    {
+      "is_hidden": true,
+      "effect_entries": [
+        {
+          "effect": "This Pokémon's Speed is doubled during strong sunlight.\n\nThis bonus does not count as a stat modifier.",
+          "short_effect": "Doubles Speed during strong sunlight."
+        }
+      ],
+      "name": "Chlorophyll",
+      "id": 34
+    },
+    {
+      "is_hidden": false,
+      "effect_entries": [
+        {
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage.",
+          "short_effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+        }
+      ],
+      "name": "Overgrow",
+      "id": 65
+    }
+  ],
+  "moves": [
+    {
+      "name": "Razor Wind",
+      "id": 13,
+      "power": 80,
+      "pp": 10,
+      "type": "Normal"
+    },
+    {
+      "name": "Swords Dance",
+      "id": 14,
+      "power": 0,
+      "pp": 20,
+      "type": "Normal"
+    }
+  ],
+  "sprites": {
+    "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+    "back_female": "",
+    "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png",
+    "back_shiny_female": "",
+    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "front_female": "",
+    "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+    "front_shiny_female": ""
+  },
+  "field_pokemon_type": ["Grass", "Poison"],
+  "evolutions": [
+    {
+      "name": "Bulbasaur",
+      "avatar": "https://gamepress.gg/pokemongo/sites/pokemongo/files/2016-08/1_0.png",
+      "id": 1
+    },
+    {
+      "name": "Ivysaur",
+      "avatar": "https://gamepress.gg/pokemongo/sites/pokemongo/files/2016-08/2.png",
+      "id": 2
+    },
+    {
+      "name": "Venusaur",
+      "avatar": "https://gamepress.gg/pokemongo/sites/pokemongo/files/2016-07/3.png",
+      "id": 3
+    }
+  ]
+}

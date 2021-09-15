@@ -1,0 +1,21 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "avatar": "https://gamepress.gg/pokemongo/sites/pokemongo/files/2016-08/1_0.png",
+      "field_pokemon_type": ["Grass", "Poison"]
+    }
+  ],
+  "meta": {
+    "totalItems": 770,
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalPages": 10,
+    "startPage": 1,
+    "endPage": 10,
+    "startIndex": 0,
+    "endIndex": 9,
+    "pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  }
+}
